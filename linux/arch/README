@@ -1,0 +1,3 @@
+stow -d ./_home -t ~ *
+stow -d ./_etc -t /etc *
+stow -d ./_scripts -t /opt/scripts *

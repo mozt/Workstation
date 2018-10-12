@@ -3,9 +3,11 @@ URxvt.depth: 24
 ! Background color
 URxvt*background: #002b36
 
-! Цвет шрифта
-URxvt*foreground: #96abad
-!URxvt*foreground: #00FF00
+! Цвет шрифта without tmux
+!URxvt*foreground: #96abad
+! Цвет шрифта with tmux
+URxvt*foreground: #5e6c6d
+
 
 ! Другие цвета
 !URxvt*color0: black
@@ -61,7 +63,7 @@ URxvt*saveLines: 5000
 
 ! Transparency
 URxvt.transparent: true
-URxvt.shading: 30
+URxvt.shading: 25
 
 ! Addons
 ! URxvt.perl-ext-common:  default,tabbed

@@ -31,7 +31,10 @@ font pango:Ubuntu Mono derivative Powerline 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec 'urxvt -e if pgrep tmux; then tmux attach; else tmuxp load base; fi'
+bindsym $mod+Return exec "urxvt -e /opt/scripts/tmx_launcher.sh"
+bindsym $mod+Shift+Return exec "urxvt -e tmux"
 
 # kill focused window
 bindsym $mod+Shift+q kill

@@ -1,0 +1,22 @@
+session_name: ws
+windows:
+- window_name: bash
+  focus: true
+  layout: 1e2a,273x68,0,0{136x68,0,0,1,136x68,137,0,2}
+  options:
+    automatic-rename: 'off'
+  panes:
+  - focus: true
+  - shell_command:
+    - neofetch
+  start_directory: /home/max
+- window_name: ranger
+  options:
+    automatic-rename: 'off'
+  panes:
+  - shell_command: ranger
+- window_name: root
+  options:
+    automatic-rename: 'off'
+  panes:
+  - shell_command: sudo -i

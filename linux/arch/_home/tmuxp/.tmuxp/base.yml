@@ -1,22 +1,16 @@
 session_name: ws
 windows:
-- window_name: bash
-  focus: true
-  layout: 1e2a,273x68,0,0{136x68,0,0,1,136x68,137,0,2}
+- focus: 'true'
+  layout: 265a,273x77,0,0[273x48,0,0{136x48,0,0,1,136x48,137,0,2},273x28,0,49{136x28,0,49,3,136x28,137,49,4}]
+  #layout: tile
   options:
     automatic-rename: 'off'
   panes:
-  - focus: true
+  - focus: 'true'
+  - shell_command:
+    - ranger
   - shell_command:
     - neofetch
-  start_directory: /home/max
-- window_name: ranger
-  options:
-    automatic-rename: 'off'
-  panes:
-  - shell_command: ranger
-- window_name: root
-  options:
-    automatic-rename: 'off'
-  panes:
-  - shell_command: sudo -i
+  - shell_command:
+    - atop 60
+  window_name: main

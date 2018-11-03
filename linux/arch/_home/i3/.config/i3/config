@@ -205,9 +205,13 @@ bindsym XF86AudioMute exec amixer -q -D pulse sset Master toggle && pkill -RTMIN
 
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #002b36 #002b36 #00FF00 #2e9ef4   #002b36
-client.focused_inactive #002b36 #002b36 #839496 #484e50   #002b36
-client.unfocused        #3a3a3a #3a3a3a #888888 #292d2e   #3a3a3a
+#client.focused          #002b36 #002b36 #00FF00 #2e9ef4   #002b36
+client.focused          #00FF00 #002b36 #00FF00 #2e9ef4   #002b36
+#client.focused_inactive #002b36 #002b36 #839496 #484e50   #002b36
+client.focused_inactive #888888 #002b36 #839496 #484e50   #002b36
+#client.unfocused        #3a3a3a #3a3a3a #888888 #292d2e   #3a3a3a
+client.unfocused        #888888 #3a3a3a #888888 #292d2e   #3a3a3a
+
 #client.urgent           #2f343a #900000 #ffffff #900000   #900000
 #client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 #client.background       #ffffff
@@ -267,34 +271,35 @@ bar {
     output $monNB
     mode dock
     #status_command i3status
-	status_command i3blocks
+    status_command i3blocks
     tray_output $monNB
     font pango:DejaVu Sans Mono, Icons 10
     #font pango:NovaMono for Powerline , Icons 10
     #font pango:Ubuntu Mono derivative Powerline, Icons 11
     separator_symbol "⎛"
     #separator_symbol " "
-	#strip_workspace_numbers yes
+    strip_workspace_numbers no
 }
 
 bar {
     colors {
-        	separator #268bd2
-        	background #002b36
-            statusline #839496
-            focused_workspace #00FF00 #002b36 #00FF00
-            active_workspace #839496 #002b36 #839496
-            inactive_workspace #002b36 #586e75 #002b36
-            urgent_workspace #d33682 #d33682 #fdf6e3
+ 	separator #268bd2
+       	background #002b36
+        statusline #839496
+        focused_workspace #00FF00 #002b36 #00FF00
+        active_workspace #839496 #002b36 #839496
+        inactive_workspace #002b36 #586e75 #002b36
+        urgent_workspace #d33682 #d33682 #fdf6e3
     }
     output $monD1
     output $monD2
     mode hide
-	#hidden_state hide
+    #hidden_state hide
     modifier Mod4
-	tray_output $monC
+    tray_output $monD1 
+    tray_output $monD2
     font pango:DejaVu Sans Mono, Icons 10
-	#strip_workspace_numbers yes
+    #strip_workspace_numbers yes
 }
 
 #exec --no-startup-id feh --no-xinerama --bg-scale /home/max/ferrari_f1.jpg

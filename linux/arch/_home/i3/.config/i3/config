@@ -296,8 +296,8 @@ bar {
     mode hide
     #hidden_state hide
     modifier Mod4
-    tray_output $monD1 
-    tray_output $monD2
+    #tray_output $monD1 
+    #tray_output $monD2
     font pango:DejaVu Sans Mono, Icons 10
     #strip_workspace_numbers yes
 }

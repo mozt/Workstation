@@ -310,3 +310,4 @@ bar {
 exec clipit &
 exec nm-applet &
 exec blueman-applet &
+exec xxkb &

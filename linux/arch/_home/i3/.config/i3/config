@@ -310,4 +310,6 @@ bar {
 exec clipit &
 exec nm-applet &
 exec blueman-applet &
-exec xxkb &
+exec --no-startup-id xxkb &
+
+
